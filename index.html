@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Indicator Or Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Password Strength Checker</h1>
+        <p class="subtitle">Create a strong password.</p>
+
+        <div class="input-group">
+            <label for="password">Type Password:</label>
+            <div class="passwrod-wrapper">
+                <input type="password" id="password" placeholder="Type Your Password Here ....">
+                <span class="toggle-password" id="togglePassword">👁️</span>
+            </div>
+        </div>  
+
+        <div class="strength-meter" id="strengthMeter">
+            <div class="strength-bar">
+                <div class="strength-bar-fill" id="strengthBar"></div>
+            </div>
+            <div class="strength-text" id="strengthText"></div>
+        </div>
+
+        <div class="requirements">
+            <h3>Password Requirements:</h3>
+            <div class="requirement" id="req-length">
+                <span class="requirement-icon"></span>
+                <span>At Least 8 Characters</span>
+            </div>
+            <div class="requirement" id="req-uppercase">
+                <span class="requirement-icon"></span>
+                <span>An Uppercase Letter (A-Z)</span>
+            </div>
+            <div class="requirement" id="req-lowercase">
+                <span class="requirement-icon"></span>
+                <span>A Lowercase Letter (a-z)</span>
+            </div>
+            <div class="requirement" id="req-number">
+                <span class="requirement-icon"></span>
+                <span>A Number (0-9)</span>
+            </div>
+            <div class="requirement" id="req-special">
+                <span class="requirement-icon"></span>
+                <span>A Special Symbol (@, #, $, %, etc.)</span>
+            </div>
+        </div>
+        <button class="submit-btn" id="submitBtn">Submit Password</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
